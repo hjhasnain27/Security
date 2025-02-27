@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Menu Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="security.css">
+
+</head>
+<body>
+<div>
+    <!-- ✅ 1st navbar with logo on the left and menu on the right -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F5FAFE;">
+        <div class="container web-costum-container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="60" height="60">
+            
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRight"
+                    aria-controls="navbarRight" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarRight">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"><b><i class="fa fa-envelope"></i></b> info.deltasolution.com</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><b><i class="fa-solid fa-phone-volume"></i></b> +44 (0) 2030 049 832</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="border-right:2px solid black;height:40px;"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">&nbsp;&nbsp;<b><i class="fa-brands fa-facebook-f"></i></b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><b><i class="fa-brands fa-youtube"></i></b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><b><i class="fa-brands fa-twitter"></i></b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ✅ 2nd Navbar with center menu and custom spacing -->
+    <div class="background">
+        <nav class="navbar navbar-expand-lg custom-nav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCentered" 
+                        aria-controls="navbarCentered" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCentered">
+                    <ul class="custom-navbar-nav d-flex flex-row">
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link" href="#">About</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link" href="#">Services</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link" href="#">Pages</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="container py-2 ">
+            <div class="row align-items-center">
+                <!-- 📩 Contact Us Form Section -->
+                 <div class="col-lg-3">
+
+                 </div>
+                <div class="col-lg-7" style="margin-left: 50px;">
+                    <div class="">
+                        <h2 class="form-heading">Leading Security Service <br>Provider</h2>
+                        <h4 class="form-sub-heading">Quality and expert security personnels'all of our<br> 
+                        security officers are all SIA licenced'</h4>
+                        <div class="form-container">
+                            <form id="contactForm">
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        
+                                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6">
+                                        
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        
+                                        <input type="tel" class="form-control" id="phone" placeholder="Phone" required>
+                                    </div>
+                                </div>
+                                <div class="cont-btn">
+                                    <button type="submit" class="cont-btn-inner">Contact Us</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Bootstrap JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                    
+                    <!-- 🏃 JavaScript for form functionality -->
+                    <script>
+                        document.getElementById('contactForm').addEventListener('submit', function(event) {
+                            event.preventDefault(); // Prevent page reload
+                            const firstName = document.getElementById('firstName').value;
+                            const lastName = document.getElementById('lastName').value;
+                            const email = document.getElementById('email').value;
+                            const phone = document.getElementById('phone').value;
+                    
+                            // 🌟 Log form data (this simulates form submission)
+                            console.log("Form Submitted ✅");
+                            console.log(`Name: ${firstName} ${lastName}`);
+                            console.log(`Email: ${email}`);
+                            console.log(`Phone: ${phone}`);
+                    
+                            // 🎉 Show confirmation (you can replace this with real submission logic)
+                            alert(`Thank you, ${firstName}! Your message has been received.`);
+                            this.reset(); // Clear form fields after submission
+                        });
+                    </script> 
+
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+
+        
+
+
+
+    <!-- service section  -->
+
+<section>
+    <div class="container pb-4 web-costum-container">
+        <h3 class="serve-title"> Our All Services</h3>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="service-card orange-card">
+                    <div class="service-icon-wrapper">
+                        <img src="corproate.png" class="service-icon wp-image-9392" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
+                    </div>
+                    <h3>Corporate Security</h3>
+                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card ">
+                    <div class="service-icon-wrapper">
+                        <img src="retail.png" class="service-icon wp-image-9380" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
+                    </div>
+                    <h3>Retail Security</h3>
+                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="service-icon-wrapper">
+                        <img src="conceirge-security.png" class="service-icon wp-image-9399" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
+                    </div>
+                    <h3>Concierge Security</h3>
+                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card ">
+                    <div class="service-icon-wrapper">
+                        <img src="event-security.png" class="service-icon wp-image-9391" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
+                    </div>
+                    <h3>Event Security</h3>
+                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card ">
+                    <div class="service-icon-wrapper">
+                        <img src="industry.png" class="service-icon wp-image-9398" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
+                    </div>
+                    <h3>Industrial Security</h3>
+                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card ">
+                    <div class="service-icon-wrapper">
+                        <img src="construction.png" class="service-icon wp-image-9388" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
+                    </div>
+                    <h3>Construction Security</h3>
+                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    
+                </div>
+            </div>
+                    <div class="text-center veiw-btn">
+            <button class="veiw-btn-inner ">VIEW ALL</button>
+        </div>
+    </div>
+    
+</section>
+
+<!--2nd contact us -->
+<section>
+    <div class="section-holder ">
+        <div class="container mycontainer web-costum-container">
+            <div class="col-lg-6 my-col">
+                <img class="elevate-img" src="elevate.jpg" alt="Elevate Image">
+            </div>
+            <div class="col-lg-6 my-col text-content">
+                <h2>Elevate your security. <br> Act now.</h2>
+                <p class="sub-title" >Get in touch today to set up a consultation and discover how our<br> security solutions can surpass your needs.  </p>
+               <div class="btn-cont-us">
+                <button type="submit" class="btn-cont-us-inner">Contact Us</button>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--3rd contact us banner  -->
+
+
+       
+<section class="cont-section">
+    <div class="background-div">
+        <div class="text-overlay">
+            <p class="work-title" >Get in touch today to set up a consultation and discover how our<br> security solutions can surpass your needs.  </p>
+            <h2>Work with us.</h2>
+            <div class="btn-work">
+             <button type="submit" class="btn-work-inner">Contact Us</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="card-section">
+    <div class="content-box ">
+        <div style="padding-left: 150px;">
+            <p class="content-heading">"
+            </p>
+        <p class="content-sub-heading" id="heading">
+            Interforce provides impeccable security services for the <br> corporate sector & their professionalism and <br> trustworhiness are unmatched.
+       
+        </p>
+        <div class="d-flex">
+        <img src="blog-1.jpg" width="80" height="80" style="border-radius: 50%;" class="pt-2">
+        <p class="pt-3 px-3 text-white"><strong>Mr. James B.</strong> <br> <small>Director-Capital IT Services </small></p> 
+        </div>
+        <h4 id="text" class="text-white pt-2"> Trusted Service. <br> Tailored Solutions.</h4>
+    </div>
+        <div class="nav-buttons">
+            <button onclick="prevContent()" class="btn"> <i class="fa fa-angle-left"></i>
+            </button>
+            <button onclick="nextContent()" class="btn"><i class="fa fa-angle-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    const contentData = [
+        { title: "Interforce provides impeccable security services for the \n corporate sector & their professionalism and \n trustworhiness are unmatched",
+         description: "Trusted Service. \n Tailored Solutions." },
+        { title: "Interforce provides impeccable security services for the \n corporate sector & their professionalism and \n trustworhiness are unmatched",
+         description: "Trusted Service. \n Tailored Solutions." },
+        { title: "Interforce provides impeccable security services for the \n corporate sector & their professionalism and \n trustworhiness are unmatched",
+         description:  "Trusted Service. \n Tailored Solutions." }
+    ];
+
+    let index = 0;
+
+    function updateContent() {
+        document.getElementById("heading").innerText = contentData[index].title;
+        document.getElementById("text").innerText = contentData[index].description;
+    }
+
+    function nextContent() {
+        index = (index + 1) % contentData.length;
+        updateContent();
+    }
+
+    function prevContent() {
+        index = (index - 1 + contentData.length) % contentData.length;
+        updateContent();
+    }
+</script>
+
+<!-- our blogs -->
+<section class=" pt-5 web-costum-container">
+    <h2 class="blog-title">Our Recent Story</h2> 
+    <p class="blog-sub-heading">Get in touch today to set up a consultation and discover <br> how our security solutions can surpass your needs.</p> 
+    
+    <div class="card-container">
+        <div class="card col-lg-4">
+            <img src="blog-1.jpg" alt="Image 1">
+            <div class="card-content">
+                <p class="blog-date">Admin / Dec 08</p>
+                <h5 class="blog-sub-title">Delta solutions It Trends</h5>
+                <p class="bolg-text">Lorem Ipsum is simply Dummy text of the <br>Printing and Typesetting industry. Lorem <br>Ipsum has been the industry's standard </p>
+                   
+                <div>
+                    <a class="read-more" href=""> Read more</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card col-lg-4">
+            <img src="blog-1.jpg" alt="Image 1">
+            <div class="card-content">
+                <p class="blog-date">Admin / Dec 08</p>
+                <h5 class="blog-sub-title">Delta solutions It Trends</h5>
+                <p class="bolg-text">Lorem Ipsum is simply Dummy text of the <br>Printing and Typesetting industry. Lorem <br>Ipsum has been the industry's standard </p>
+                   
+                <div>
+                    <a class="read-more" href=""> Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-lg-4">
+            <img src="blog-1.jpg" alt="Image 1">
+            <div class="card-content">
+                <p class="blog-date">Admin / Dec 08</p>
+                <h5 class="blog-sub-title">Delta solutions It Trends</h5>
+                <p class="bolg-text">Lorem Ipsum is simply Dummy text of the <br>Printing and Typesetting industry. Lorem <br>Ipsum has been the industry's standard </p>
+                   
+                <div>
+                    <a class="read-more" href=""> Read more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Helped Companies -->
+
+<section class="company-container">
+    <div class="web-costum-container">
+    <h2 class="blog-title">We Helped Over 1000 Companies</h2> 
+    <p class="blog-sub-heading">Inforce Limited Holds SIA Approved Contractor Status for provision of security guarding service.</p> 
+    <p class="bolg-text">Outstanding customer service is at the heartof everything we do and to strengthen this core value,we are proudly associated<br>
+    with several accreditations and proffestionals organisations.
+    </p>
+
+    <div class="img-sec" >
+<div class="">
+ <img src="smas-worksafe.png" class="company-img">
+</div>
+<div class="">
+    <img src="information-commissioners-office-ico-logo (1).png" class="company-img">
+   </div>
+   <div class="">
+    <img src="rs=w_1280.webp" class="company-img">
+   </div>
+   <div class="">
+    <img src="sia-logo-so-secure-236x300.png" class="company-img">
+   </div>
+   <div class="">
+    <img src="Seal-Colour-Alcumus-SafeContractor.png" class="company-img">
+   </div>
+
+    </div>
+</div>
+</section>
+
+<footer class="">
+    <div class="footer-container">
+    <div class="footer-content web-costum-container">
+      <div class="">
+       <img src="logo.png" width="60" height="60">
+       <p class="footer-text">Lorem Ipsum is simply Dummy text of the <br>Printing and Typesetting industry. Lorem <br>Ipsum has been the industry's standard </p>
+       <div class="d-flex flex-wrap justify-content-between">
+        <img src="certifacte-1.jpg" style="object-fit: contain;" width="110" height="110">
+        <img src="certifacte-2.jpg" style="object-fit: contain;" width="110" height="110">
+
+       </div>
+       
+                             
+        <div class="d-flex gap-3  mt-2  justify-content-start social-img">
+            <a href="#" class="text-white "><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white "><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white "><i class="fab fa-twitter"></i></a>
+            
+        </div>
+             
+       
+    </div>
+
+    <div class="">
+        <h3 class="footer-headings">Services</h3>
+        <div class="footer-list pt-2 footer-text">
+            <p>2nd Floor,2 Moldon Road
+                <br>Romtord, RM7 0JB
+            </p>
+            <p class="pt-2">Email: info@interforceuk.com</p>
+            <p class="pt-2">Phone:+44 (0) 2030 049 832</p>
+        </div>
+    </div>
+
+    <div class="">
+        <h3 class="footer-headings">About us</h3>
+        <div class="footer-list footer-text pt-2">
+            <p>Interforce Limited (Reg:09240838) <br>Registered Address: 135 Wellesely Road
+                <br>llford, IG1 4LN
+            </p>
+            <p class="pt-2">Registered in England and Wales <br> VAT No: 225235140 
+            </p>
+            
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="copyright-container">
+    <div class="copyright-content web-costum-container">
+     <div class="footer-text">
+        <p>Copyright 2023-Expets inn-All Right Reserved.</p>
+     </div>
+     <div class="footer-text">
+        <p>Terms and Conditions - Privacy Policy</p>
+     </div>
+    </div>
+</div>
+</footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+</body>
+</html>
