@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="security.css">
+
+</head>
+<body>
+<div>
+    <!-- ✅ 1st navbar with logo on the left and menu on the right -->
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #F5FAFE;">
+        <div class="container web-costum-container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" width="60" height="60">
+            
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRight"
+                    aria-controls="navbarRight" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarRight">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"><b><i class="fa fa-envelope"></i></b> info.deltasolution.com</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><b><i class="fa-solid fa-phone-volume"></i></b> +44 (0) 2030 049 832</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="border-right:2px solid black;height:40px;"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">&nbsp;&nbsp;<b><i class="fa-brands fa-facebook-f"></i></b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><b><i class="fa-brands fa-youtube"></i></b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><b><i class="fa-brands fa-twitter"></i></b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ✅ 2nd Navbar with center menu and custom spacing -->
+    <div class="background">
+        <nav class="navbar navbar-expand-lg custom-nav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCentered" 
+                        aria-controls="navbarCentered" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarCentered">
+                    <ul class="custom-navbar-nav d-flex flex-row">
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link active" href="file:///C:/Users/ART/Desktop/Security/index.html#">Home</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/about.html">About</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/services.html">Services</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/blog.html">Blog</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/corporate.html">Pages</a>
+                        </li>
+                        <li class="custom-nav-item">
+                            <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="container py-2 ">
+            <div class="row align-items-center">
+                <!-- 📩 Contact Us Form Section -->
+                 <div class="col-lg-3">
+
+                 </div>
+                <div class=" box-holder col-lg-7">
+                    <div class="">
+                        <h2 class="form-heading">Leading Security Service <br>Provider</h2>
+                        <h4 class="form-sub-heading">Quality and expert security personnels'all of our<br> 
+                        security officers are all SIA licenced'</h4>
+                        <div class="form-container">
+                            <form id="contactForm">
+                                <div class="row mb-3">
+                                    <div class="col-md-6 col-6">
+                                        
+                                        <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6 col-6 ">
+                                        
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6 col-6">
+                                        
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-md-6 col-6">
+                                        
+                                        <input type="tel" class="form-control" id="phone" placeholder="Phone" required>
+                                    </div>
+                                </div>
+                                <div class="cont-btn">
+                                    <button type="submit" class="cont-btn-inner">Contact Us</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Bootstrap JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                    
+                    <!-- 🏃 JavaScript for form functionality -->
+                    <script>
+                        document.getElementById('contactForm').addEventListener('submit', function(event) {
+                            event.preventDefault(); // Prevent page reload
+                            const firstName = document.getElementById('firstName').value;
+                            const lastName = document.getElementById('lastName').value;
+                            const email = document.getElementById('email').value;
+                            const phone = document.getElementById('phone').value;
+                    
+                            // 🌟 Log form data (this simulates form submission)
+                            console.log("Form Submitted ✅");
+                            console.log(`Name: ${firstName} ${lastName}`);
+                            console.log(`Email: ${email}`);
+                            console.log(`Phone: ${phone}`);
+                    
+                            // 🎉 Show confirmation (you can replace this with real submission logic)
+                            alert(`Thank you, ${firstName}! Your message has been received.`);
+                            this.reset(); // Clear form fields after submission
+                        });
+                    </script> 
+
+            </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+
+<!--2nd contact us -->
+<style>
+    
+    .menu-contact-holder {
+            background: linear-gradient(
+                to bottom,
+                white 0%, white 10%,    /* Top white section */
+                #F5FAFE 10%, #F5FAFE 100% /* Sky blue section */
+            );
+            margin: 50px 15px 0px 15px;
+            position: relative;
+        }
+
+        .my-contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .my-contact-col {
+            flex: 0 0 50%;
+            max-width: 50%;
+            position: relative;
+        }
+
+        .contact-img {
+            width: 85%;
+            position: relative;
+            top:0px; /* Adjust this value to control how much image overlaps the white section */
+            z-index: 2;
+        }
+
+        .my-contact-content {
+            padding: 100px 40px 0px 0px; /* Adjust top padding to align text with sky blue section */
+  position: relative;
+        }
+
+        .my-contact-content h2 {
+            font-size: 2rem;
+            color:#05276A;
+            line-height: 1.2;
+            font-weight: 700;
+            padding-top:10px;
+            
+        }
+        .page-number {  font-size: 80px;  /* Bada text size */
+    font-weight: 900; /* Bold text */
+    color: rgba(0, 0, 0, 0.1); /* Light gray, halka transparent */
+    position: absolute; /* Absolute positioning */
+    top:60px; /* Thoda upar adjust karein */
+    left:-60px; /* Thoda left adjust karein */
+    z-index: 0; /* Peeche lekin hidden na ho */
+}
+
+        .my-contact-text {
+        font-size: 12px;
+        font-weight: 600;
+        padding-top: 10px;
+        
+        }
+
+        @media (max-width:768px) {
+
+            .menu-contact-holder {
+            margin: 0px 0px 0px 0px;
+            position: relative;
+        }
+        .page-number {  font-size: 50px;  /* Bada text size */
+           top:30px; /* Thoda upar adjust karein */
+    left:-20px; /* Thoda left adjust karein */
+    
+}
+        .my-contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .my-contact-col {
+            flex: 0 0 50%;
+            max-width: 50%;
+            position: relative;
+        }
+
+        .contact-img {
+            width: 85%;
+            position: relative;
+            top:30px; /* Adjust this value to control how much image overlaps the white section */
+            z-index: 2;
+        }
+
+        .my-contact-content {
+            padding: 20px 40px 0px 0px; /* Adjust top padding to align text with sky blue section */
+        }
+
+        .my-contact-content h2 {
+            font-size: 20px;
+            color:#05276A;
+            line-height: 1.2;
+            font-weight: 700;
+            padding-top:40px;
+            
+        }
+        .my-contact-text {
+        font-size: 8px;
+        font-weight: 600;
+        
+        }
+ 
+    }
+
+    @media (max-width:525px) {
+
+        .page-number {  font-size: 50px;  /* Bada text size */
+           top:10px; /* Thoda upar adjust karein */
+    left:0px; /* Thoda left adjust karein */
+    
+}
+        .menu-contact-holder {
+            
+            margin: 0px 0px 0px 0px;
+            position: relative;
+        }
+
+        .my-contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .my-contact-col {
+            flex: 1 1 50%;
+            max-width: 100%;
+            position: relative;
+        }
+        .blog-title{
+            margin-top: 10px !important;
+        }
+        .contact-img {
+            width: 100%;
+            position: relative;
+            top:0px; /* Adjust this value to control how much image overlaps the white section */
+            z-index: 2;
+        }
+
+        .my-contact-content {
+            padding: 0px 0px 0px 0px; /* Adjust top padding to align text with sky blue section */
+        }
+
+        .my-contact-content h2 {
+            font-size:25px;
+            color:#05276A;
+            line-height: 1.2;
+            font-weight: 700;
+            padding-top:40px;
+            
+        }
+        .my-contact-text {
+        font-size: 11px;
+        font-weight: 600;
+        
+        }
+ 
+}
+</style>
+
+<section>
+    <h2 class="blog-title mt-5 ">Contact Us</h2>
+    <div class="menu-contact-holder ">
+        <div class=" my-contact-container web-costum-container">
+            <div class="col-lg-6 my-contact-col">
+                <img class="contact-img" src="images/contact-us.webp" alt="Elevate Image">
+            </div>
+            <div class="col-lg-6  my-contact-content">
+                <h2>Contact Us</h2>
+                <p class="page-number">01.</p>
+                <p class="my-contact-text" >
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of 
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                     Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+                      and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+                      1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
+                      treatise on the theory of ethics, very popular during the Renaissance.
+                     The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.    
+                </p>
+                
+                <div class="pt-2">
+                    <p class="blog-sub-title"> Office No#3</p>
+                    <p  class="my-contact-text">Interforce Limited (Reg:09240838) <br>Registered Address: 135 Wellesely Road
+                        <br>llford, IG1 4LN
+                    </p>    
+                </div>
+                <div class="pt-2">
+                    <p class="blog-sub-title"> Office No#3</p>
+                    <p  class="my-contact-text">Interforce Limited (Reg:09240838) <br>Registered Address: 135 Wellesely Road
+                        <br>llford, IG1 4LN
+                    </p>
+                    
+                </div>
+                <div class="pt-2">
+                    <p class="blog-sub-title"> Office No#3</p>
+                    <p  class="my-contact-text">Interforce Limited (Reg:09240838) <br>Registered Address: 135 Wellesely Road
+                        <br>llford, IG1 4LN
+                    </p>
+                    
+                </div>
+                
+        </div>
+    </div>
+</section>
+
+
+<footer class="">
+    <div class="footer-container">
+    <div class="footer-content web-costum-container">
+      <div class="">
+       <img src="images/logo.png" width="60" height="60">
+       <p class="footer-text">Lorem Ipsum is simply Dummy text of the <br>Printing and Typesetting industry. Lorem <br>Ipsum has been the industry's standard </p>
+       <div class="d-flex flex-wrap justify-content-between">
+        <img src="images/certifacte-1.jpg" style="object-fit: contain;" width="110" height="110">
+        <img src="images/certifacte-2.jpg" style="object-fit: contain;" width="110" height="110">
+
+       </div>
+       
+                             
+        <div class="d-flex gap-3  mt-2  justify-content-start social-img">
+            <a href="#" class="text-white "><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white "><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white "><i class="fab fa-twitter"></i></a>
+            
+        </div>
+             
+       
+    </div>
+
+    <div class="">
+        <h3 class="footer-headings">Services</h3>
+        <div class="footer-list pt-2 footer-text">
+            <p>2nd Floor,2 Moldon Road
+                <br>Romtord, RM7 0JB
+            </p>
+            <p class="pt-2">Email: info@interforceuk.com</p>
+            <p class="pt-2">Phone:+44 (0) 2030 049 832</p>
+        </div>
+    </div>
+
+    <div class="">
+        <h3 class="footer-headings">About us</h3>
+        <div class="footer-list footer-text pt-2">
+            <p>Interforce Limited (Reg:09240838) <br>Registered Address: 135 Wellesely Road
+                <br>llford, IG1 4LN
+            </p>
+            <p class="pt-2">Registered in England and Wales <br> VAT No: 225235140 
+            </p>
+            
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <div class="copyright-container">
+    <div class="copyright-content web-costum-container">
+     <div class="footer-text">
+        <p>Copyright 2023-Expets inn-All Right Reserved.</p>
+     </div>
+     <div class="footer-text">
+        <p>Terms and Conditions - Privacy Policy</p>
+     </div>
+    </div>
+</div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let navLinks = document.querySelectorAll(".custom-nav-link");
+
+        // Get the current page URL without query parameters
+        let currentURL = window.location.href.split(/[?#]/)[0];
+
+        navLinks.forEach(link => {
+            let linkURL = link.href.split(/[?#]/)[0]; // Remove query parameters
+
+            // Check if current page URL matches the link URL
+            if (linkURL === currentURL) {
+                // Remove active class from all other links
+                navLinks.forEach(nav => nav.classList.remove("active"));
+
+                // Add active class to the matched link
+                link.classList.add("active");
+            }
+
+            // Click event to update active class dynamically
+            link.addEventListener("click", function () {
+                navLinks.forEach(nav => nav.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+    });
+</script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+</body>
+</html>

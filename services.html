@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Menu Navbar</title>
+    <title>Services</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome 6 CDN -->
@@ -72,7 +72,7 @@
                             <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/services.html">Services</a>
                         </li>
                         <li class="custom-nav-item">
-                            <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/services.html">Blog</a>
+                            <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/blog.html">Blog</a>
                         </li>
                         <li class="custom-nav-item">
                             <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/corporate.html">Pages</a>
@@ -162,8 +162,7 @@
     <div class="container pb-4 web-costum-container">
         <h3 class="serve-title"> Our All Services</h3>
         <div class="row g-4">
-            <div class="col-md-4 ">
-               
+            <div class="col-md-4">
                 <div class="service-card orange-card">
                     <div class="service-icon-wrapper">
                         <img src="images/corproate.png" class="service-icon wp-image-9392" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
@@ -223,45 +222,49 @@
                     
                 </div>
             </div>
-                    <div class="text-center veiw-btn">
-            <button class="veiw-btn-inner "> <a href="file:///C:/Users/ART/Desktop/Security/services.html" style="text-decoration: none;color: black;"> VIEW ALL </a></button>
-        </div>
+              
+            <div class="col-md-4">
+                <div class="service-card ">
+                    <div class="service-icon-wrapper">
+                        <img src="images/construction.png" class="service-icon wp-image-9388" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
+                    </div>
+                    <h3>Construction Security</h3>
+                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card ">
+                    <div class="service-icon-wrapper">
+                        <img src="images/construction.png" class="service-icon wp-image-9388" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
+                    </div>
+                    <h3>Construction Security</h3>
+                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card ">
+                    <div class="service-icon-wrapper">
+                        <img src="images/construction.png" class="service-icon wp-image-9388" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
+                    </div>
+                    <h3>Construction Security</h3>
+                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card ">
+                    <div class="service-icon-wrapper">
+                        <img src="images/construction.png" class="service-icon wp-image-9388" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
+                    </div>
+                    <h3>Construction Security</h3>
+                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                    
+                </div>
+            </div>
     </div>
     
-</section>
-
-<!--2nd contact us -->
-<section>
-    <div class="section-holder ">
-        <div class="container mycontainer web-costum-container">
-            <div class="col-lg-6 my-col">
-                <img class="elevate-img" src="images/elevate.jpg" alt="Elevate Image">
-            </div>
-            <div class="col-lg-6 my-col text-content">
-                <h2>Elevate your security. <br> Act now.</h2>
-                <p class="sub-title" >Get in touch today to set up a consultation and discover how our security solutions can surpass your needs.  </p>
-               <div class="btn-cont-us">
-                <button type="submit" class="btn-cont-us-inner">Contact Us</button>
-               </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--3rd contact us banner  -->
-
-
-       
-<section class="cont-section">
-    <div class="background-div">
-        <div class="text-overlay">
-            <p class="work-title" >Get in touch today to set up a consultation and discover how our security solutions can surpass your needs.  </p>
-            <h2 class="work-center-text">Work with us.</h2>
-            <div class="btn-work">
-             <button type="submit" class="btn-work-inner">Contact Us</button>
-            </div>
-        </div>
-    </div>
 </section>
 
 
@@ -462,39 +465,36 @@
     </div>
 </div>
 </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let navLinks = document.querySelectorAll(".custom-nav-link");
 
+        // Get the current page URL without query parameters
+        let currentURL = window.location.href.split(/[?#]/)[0];
+
+        navLinks.forEach(link => {
+            let linkURL = link.href.split(/[?#]/)[0]; // Remove query parameters
+
+            // Check if current page URL matches the link URL
+            if (linkURL === currentURL) {
+                // Remove active class from all other links
+                navLinks.forEach(nav => nav.classList.remove("active"));
+
+                // Add active class to the matched link
+                link.classList.add("active");
+            }
+
+            // Click event to update active class dynamically
+            link.addEventListener("click", function () {
+                navLinks.forEach(nav => nav.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+    });
+</script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let navLinks = document.querySelectorAll(".custom-nav-link");
-    
-            // Get the current page URL without query parameters
-            let currentURL = window.location.href.split(/[?#]/)[0];
-    
-            navLinks.forEach(link => {
-                let linkURL = link.href.split(/[?#]/)[0]; // Remove query parameters
-    
-                // Check if current page URL matches the link URL
-                if (linkURL === currentURL) {
-                    // Remove active class from all other links
-                    navLinks.forEach(nav => nav.classList.remove("active"));
-    
-                    // Add active class to the matched link
-                    link.classList.add("active");
-                }
-    
-                // Click event to update active class dynamically
-                link.addEventListener("click", function () {
-                    navLinks.forEach(nav => nav.classList.remove("active"));
-                    this.classList.add("active");
-                });
-            });
-        });
-    </script>
-    
-    
 </div>
 </body>
 </html>

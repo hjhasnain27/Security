@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Menu Navbar</title>
+    <title>Pages</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome 6 CDN -->
@@ -72,7 +72,7 @@
                             <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/services.html">Services</a>
                         </li>
                         <li class="custom-nav-item">
-                            <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/services.html">Blog</a>
+                            <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/blog.html">Blog</a>
                         </li>
                         <li class="custom-nav-item">
                             <a class="custom-nav-link" href="file:///C:/Users/ART/Desktop/Security/corporate.html">Pages</a>
@@ -156,114 +156,188 @@
 
 
     </div>
-    <!-- service section  -->
 
-<section>
-    <div class="container pb-4 web-costum-container">
-        <h3 class="serve-title"> Our All Services</h3>
-        <div class="row g-4">
-            <div class="col-md-4 ">
-               
-                <div class="service-card orange-card">
-                    <div class="service-icon-wrapper">
-                        <img src="images/corproate.png" class="service-icon wp-image-9392" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
-                    </div>
-                    <h3>Corporate Security</h3>
-                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
-                    
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card ">
-                    <div class="service-icon-wrapper">
-                        <img src="images/retail.png" class="service-icon wp-image-9380" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
-                    </div>
-                    <h3>Retail Security</h3>
-                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
-                    
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <div class="service-icon-wrapper">
-                        <img src="images/conceirge-security.png" class="service-icon wp-image-9399" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
-                    </div>
-                    <h3>Concierge Security</h3>
-                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
-                    
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card ">
-                    <div class="service-icon-wrapper">
-                        <img src="images/event-security.png" class="service-icon wp-image-9391" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
-                    </div>
-                    <h3>Event Security</h3>
-                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
-                    
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card ">
-                    <div class="service-icon-wrapper">
-                        <img src="images/industry.png" class="service-icon wp-image-9398" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
-                    </div>
-                    <h3>Industrial Security</h3>
-                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
-                    
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card ">
-                    <div class="service-icon-wrapper">
-                        <img src="images/construction.png" class="service-icon wp-image-9388" width="512" height="512" srcset="" sizes="(max-width: 512px) 100vw, 512px">
-                    </div>
-                    <h3>Construction Security</h3>
-                    <p>Lorem Ipsum is simply Dummy text of the Printing and Typesetting industry. Lorem Ipsum has been the industry's standard </p>
-                    
-                </div>
-            </div>
-                    <div class="text-center veiw-btn">
-            <button class="veiw-btn-inner "> <a href="file:///C:/Users/ART/Desktop/Security/services.html" style="text-decoration: none;color: black;"> VIEW ALL </a></button>
-        </div>
-    </div>
-    
-</section>
 
 <!--2nd contact us -->
+<style>
+    
+    .menu-about-holder {
+            background: linear-gradient(
+                to bottom,
+                white 0%, white 15%,    /* Top white section */
+                #F5FAFE 15%, #F5FAFE 100% /* Sky blue section */
+            );
+            margin: 50px 0px 0px 0px;
+            position: relative;
+        }
+
+        .my-about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .my-about-col {
+            flex: 0 0 50%;
+            max-width: 50%;
+            position: relative;
+        }
+
+        .about-img {
+            width: 85%;
+            position: relative;
+            top:0px; /* Adjust this value to control how much image overlaps the white section */
+            z-index: 2;
+        }
+
+        .my-about-content {
+            padding: 80px 40px 0px 0px; /* Adjust top padding to align text with sky blue section */
+        }
+
+        .my-about-content h2 {
+            font-size: 2rem;
+            color:#05276A;
+            line-height: 1.2;
+            font-weight: 700;
+            padding-top:40px;
+            
+        }
+        .my-about-text {
+        font-size: 11px;
+        font-weight: 600;
+        
+        }
+
+        @media (max-width:768px) {
+
+            .menu-about-holder {
+            background: linear-gradient(
+                to bottom,
+                white 0%, white 15%,    /* Top white section */
+                #F5FAFE 15%, #F5FAFE 100% /* Sky blue section */
+            );
+            margin: 0px 0px 0px 0px;
+            position: relative;
+        }
+
+        .my-about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .my-about-col {
+            flex: 0 0 50%;
+            max-width: 50%;
+            position: relative;
+        }
+
+        .about-img {
+            width: 85%;
+            position: relative;
+            top:30px; /* Adjust this value to control how much image overlaps the white section */
+            z-index: 2;
+        }
+
+        .my-about-content {
+            padding: 50px 40px 0px 0px; /* Adjust top padding to align text with sky blue section */
+        }
+
+        .my-about-content h2 {
+            font-size: 20px;
+            color:#05276A;
+            line-height: 1.2;
+            font-weight: 700;
+            padding-top:40px;
+            
+        }
+        .my-about-text {
+        font-size: 8px;
+        font-weight: 600;
+        
+        }
+ 
+    }
+
+    @media (max-width:525px)
+     {
+        .menu-about-holder {
+            background: linear-gradient(
+                to bottom,
+                white 0%, white 15%,    /* Top white section */
+                #F5FAFE 15%, #F5FAFE 100% /* Sky blue section */
+            );
+            margin: 0px 0px 0px 0px;
+            position: relative;
+        }
+
+        .my-about-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .my-about-col {
+            flex: 0 0 100%;
+            max-width: 50%;
+            position: relative;
+        }
+
+        .about-img {
+            width: 85%;
+            position: relative;
+            top:30px; /* Adjust this value to control how much image overlaps the white section */
+            z-index: 2;
+        }
+
+        .my-about-content {
+            padding: 50px 40px 0px 0px; /* Adjust top padding to align text with sky blue section */
+        }
+
+        .my-about-content h2 {
+            font-size: 10px !important;
+            color:#05276A;
+            line-height: 1.2;
+            font-weight: 700;
+            padding-top:40px;
+            
+        }
+        .my-about-text {
+        font-size: 8px;
+        font-weight: 600;
+        
+        }
+}
+</style>
+
 <section>
-    <div class="section-holder ">
-        <div class="container mycontainer web-costum-container">
-            <div class="col-lg-6 my-col">
-                <img class="elevate-img" src="images/elevate.jpg" alt="Elevate Image">
+    <h2 class="blog-title mt-5 ">Corporate Security</h2>
+    <div class="menu-about-holder ">
+        <div class="container my-about-container web-costum-container">
+            <div class="col-lg-6 my-about-col">
+                <img class="about-img" src="images/service-1.webp" alt="Elevate Image">
             </div>
-            <div class="col-lg-6 my-col text-content">
-                <h2>Elevate your security. <br> Act now.</h2>
-                <p class="sub-title" >Get in touch today to set up a consultation and discover how our security solutions can surpass your needs.  </p>
-               <div class="btn-cont-us">
-                <button type="submit" class="btn-cont-us-inner">Contact Us</button>
-               </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--3rd contact us banner  -->
-
-
-       
-<section class="cont-section">
-    <div class="background-div">
-        <div class="text-overlay">
-            <p class="work-title" >Get in touch today to set up a consultation and discover how our security solutions can surpass your needs.  </p>
-            <h2 class="work-center-text">Work with us.</h2>
-            <div class="btn-work">
-             <button type="submit" class="btn-work-inner">Contact Us</button>
+            <div class="col-lg-6 my-col my-about-content">
+                <h2>Corporate Security</h2>
+                <p class="my-about-text" >
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of 
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                     Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
+                      and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 
+                      1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a 
+                      treatise on the theory of ethics, very popular during the Renaissance.
+                     The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.    
+                </p>
+                <p class="my-about-text" > The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et 
+                    Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+              
             </div>
         </div>
     </div>
 </section>
-
 
 <section class="card-section">
     <div class="content-box ">
@@ -462,39 +536,36 @@
     </div>
 </div>
 </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let navLinks = document.querySelectorAll(".custom-nav-link");
 
+        // Get the current page URL without query parameters
+        let currentURL = window.location.href.split(/[?#]/)[0];
+
+        navLinks.forEach(link => {
+            let linkURL = link.href.split(/[?#]/)[0]; // Remove query parameters
+
+            // Check if current page URL matches the link URL
+            if (linkURL === currentURL) {
+                // Remove active class from all other links
+                navLinks.forEach(nav => nav.classList.remove("active"));
+
+                // Add active class to the matched link
+                link.classList.add("active");
+            }
+
+            // Click event to update active class dynamically
+            link.addEventListener("click", function () {
+                navLinks.forEach(nav => nav.classList.remove("active"));
+                this.classList.add("active");
+            });
+        });
+    });
+</script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            let navLinks = document.querySelectorAll(".custom-nav-link");
-    
-            // Get the current page URL without query parameters
-            let currentURL = window.location.href.split(/[?#]/)[0];
-    
-            navLinks.forEach(link => {
-                let linkURL = link.href.split(/[?#]/)[0]; // Remove query parameters
-    
-                // Check if current page URL matches the link URL
-                if (linkURL === currentURL) {
-                    // Remove active class from all other links
-                    navLinks.forEach(nav => nav.classList.remove("active"));
-    
-                    // Add active class to the matched link
-                    link.classList.add("active");
-                }
-    
-                // Click event to update active class dynamically
-                link.addEventListener("click", function () {
-                    navLinks.forEach(nav => nav.classList.remove("active"));
-                    this.classList.add("active");
-                });
-            });
-        });
-    </script>
-    
-    
 </div>
 </body>
 </html>
